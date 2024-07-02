@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #332828;
+}
+
+/*BASE STYLING*/
+
+.app {
+  font-family: "Roboto Flex", sans-serif;
+  color: #332828;
+}
+
+.header {
+  margin: 10px 100px;
+}
+
+.description {
+  display: flex;
+  column-gap: 50px;
+  font-size: 25px;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.img {
+}
+
+.details {
+}
+
+.details-section {
+}
+
+.details-heading {
+}
+
+.details-list {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.goals {
+  margin: 20px 100px;
+  width: 650px;
+}
+
+h1 {
+  padding-bottom: 15px;
+}
+
+.goals-section {
+}
+
+.goals-heading {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.goals-list {
+  padding-bottom: 12px;
+}
+
+footer {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding: 4px 0;
+}
+
+.external-links__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1168px) {
+  .header {
+    padding-bottom: 40px;
+  }
+  .description {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .description--line {
+    position: relative;
+  }
+
+  .description--line::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #332828;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .description--line::before {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #332828;
+    position: absolute;
+    top: -28px;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .goals {
+    width: initial;
+    margin: 20px 250px;
+  }
+
+  h1 {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 842px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .description {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .goals-heading {
+    padding-bottom: 40px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .goals-list {
+    display: none;
+  }
+}
+
+@media (max-width: 637px) {
+  .app {
+    width: 640px;
+  }
+}
+
+@media (max-width: 376px) {
+  .app {
+    width: 640px;
+  }
+}
